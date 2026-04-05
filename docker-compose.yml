@@ -1,0 +1,7 @@
+services:
+  vroom_engine:
+    image: vroomvrp/vroom-docker:v1.12.2  # стабильная версия
+    container_name: vroom_engine
+    ports:
+      - "13000:3000"
+    restart: unless-stopped
